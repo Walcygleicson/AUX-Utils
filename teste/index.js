@@ -1,16 +1,19 @@
-import { rand, num, str } from "../module/aux-utils.js";
-const el = document.querySelector('.body').classList
-const arr = ["azul", 345, "verde", true, 1.5, "casa"];
+import { rand, num, str, arr } from "../module/aux-utils.js";
+const el = document.querySelector(".body");
+const ar = [
+    "A",
+    "azul",
+    5,
+    true,
+    1.5,
+    { left: "l88", rigth: "epx" },
+    [2, "rex", "foo", true],
+    "3.5",
+    "100",
+    el,
+];
 
-const res = rand.choice(arr)
+const res = rand.choice(arr);
 
-const number = 2
-
-console.log()
-
-
-
-
-
-
+const number = 2;
 

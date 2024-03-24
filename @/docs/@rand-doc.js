@@ -1,3 +1,7 @@
+import  "../internal/@interfaces.js";
+import { ItemProperties } from "../internal/@interfaces.js";
+
+
 /////////////// GeneratorOptions //////////////////////////
 /**
  * @typedef {object} GeneratorOptions
@@ -12,4 +16,31 @@
 //////////////// CaseKeyWords //////////////
 /**
  * @typedef {"upper" | "lower"} CaseKeyWords
+ */
+
+///////////// BreakLoopFunction //////////////
+/**
+ * @typedef {(condition: number | boolean)=>void} BreakLoopFunction Função responsável por interromper um loop infinito de um método *`.loop()`*.
+ */
+
+/////////////// HandlerFunction ///////////
+/**
+ * @callback HandlerFunction Função *`callback`* manipuladora que recebe um parâmetro.
+ * @param {ItemProperties} resObject
+ * * Recebe um *`object`* do tipo *`ItemProperties`*.
+ * ----
+ * * *`ItemProperties`* objeto que fornece propriedades com informações sobre cada iteração realizada. O *`ItemProperties`* objeto é melhor aproveitado se desestruturado obtendo as propriedades `{item, i, root, get}` e, em certas ocasiões, pode receber um método `{stop()}`.
+ * 
+ * @callback HandlerFunction_stop Função *`callback`* manipuladora que recebe dois parâmetros.
+ * @param {ItemProperties} resObject
+ * * Recebe um *`object`* do tipo *`ItemProperties`*.
+ * ----
+ * * *`ItemProperties`* objeto que fornece propriedades com informações sobre cada iteração realizada. O *`ItemProperties`* objeto é melhor aproveitado se desestruturado obtendo as propriedades `{item, i, root, get}` e, em certas ocasiões, pode receber um método `{stop()}`.
+ * @param {BreakLoopFunction} stop
+ * * Função responsável por interromper um loop infinito de um método *`.loop()`*.
+ * -----
+ * **`param condition`**
+ * *`(opcional)`*
+ * * Pode receber um número, quando a quantidade de iterações for maior ou igual ao valor passado o *`loop`* é interrompido. Pode receber um *`boolean`* onde *`true`* executa a interrupção.
+ * ----
  */

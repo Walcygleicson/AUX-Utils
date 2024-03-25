@@ -1,5 +1,12 @@
 import { __ as _ } from "../internal/@utils.js";
 //########### NUM #####################
+/**
+ * ***`AUX.Utils`***
+ * 
+ * ------
+ * * Objeto provém de métodos que manipulam valores numéricos.
+ * > 
+ */
 const num = {}
 
 ///////// .countDecimal ////////////
@@ -167,13 +174,5 @@ num.factorial = function (value) {
 }
 
 
-/**
- * ***`AUX.Utils`***
- * 
- * ------
- * * Objeto provém de métodos que trabalham com valores numéricos.
- * > 
- */
-const __ = num
 
-export {__}
+export {num as __}

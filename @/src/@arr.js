@@ -3,6 +3,13 @@ import { __ as _ } from "../internal/@utils.js"
 import { ItemProperties as Res } from "../internal/@interfaces.js"
 
 //########## ARR ################################//
+/**
+ * ***`AUX.Utils`***
+ * 
+ * ------
+ * * Objeto provém de métodos que manipulam *`arrays`*.
+ * > 
+ */
 const arr = {}
 
 /**

@@ -5,6 +5,14 @@ import "../docs/@rand-doc.js"
 
 
 //######### RAND ########################################
+/**
+ * ***`AUX.Utils`***
+ * Ler Documentação {@link https://github.com/Walcygleicson/AUXDocs AUXDocs}
+ * 
+ * ------
+ * * Objeto provém de métodos que manipulam valores pseudo aleatórios.
+ * >
+ */
 const rand = {}
 
 
@@ -350,18 +358,5 @@ rand.choice = function (list) {
     return list[index];
 }
 
-
-/**
- * ***`AUX.Utils`***
- * Ler Documentação {@link https://github.com/Walcygleicson/AUXDocs AUXDocs}
- * 
- * ------
- * * Objeto provém de métodos que trabalham com valores pseudo aleatórios.
- * >
- */
-const __ = rand
-
-
-
             
-export {__}
+export {rand as __}

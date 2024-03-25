@@ -13,7 +13,10 @@ const ar = [
     el,
 ];
 
-const res = rand.choice(arr);
+const res = str.toKebab("  textContent")
+str
 
-const number = 2;
+console.log(res)
+
+
 

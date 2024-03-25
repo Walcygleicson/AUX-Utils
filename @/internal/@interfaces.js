@@ -17,7 +17,7 @@ export class ItemProperties{
         /** * Fornece propriedades de informações sobre o *`item`* atual. */
         this.get = new ItemGetters({item, root, i})
 
-        /** Obtém o objeto original do *`item`*, se houver, caso contrário o valor é *`null`*. */
+        /** * Obtém o objeto original do *`item`*, se houver, caso contrário o valor é *`null`*. */
         this.root = root || null
 
         this.result = result? Object.freeze({
